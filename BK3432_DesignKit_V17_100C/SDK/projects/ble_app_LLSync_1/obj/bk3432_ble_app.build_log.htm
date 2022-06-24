@@ -1,0 +1,149 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Lin nc, 123, LIC=X9630-BRYLP-V1QP8-3F2ER-JMC3K-9W9BN
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.12.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARM.DLL V5.12.0.0
+Dialog DLL:      DARMP3.DLL
+    Target DLL: Segger\JLTAgdi.dll
+Dialog DLL:      TARMP3.DLL V1.02
+ 
+<h2>Project:</h2>
+E:\work\BK3432\rw_ble\internal\bk3432_ble\SDK\projects\ble_app_LLSync\bk3432.uvproj
+Project File Date:  04/30/2021
+
+<h2>Output:</h2>
+Build target 'BK3432_app'
+compiling arch_main.c...
+assembling boot_handlers.s...
+assembling boot_vectors.s...
+compiling rwble_hl.c...
+compiling rwble.c...
+compiling rwip.c...
+compiling emi.c...
+compiling flash.c...
+compiling gpio.c...
+compiling icu.c...
+compiling intc.c...
+..\..\sdk\plactform\driver\intc\intc.c(162): warning:  #223-D: function "uart2_isr" declared implicitly
+                uart2_isr();
+..\..\sdk\plactform\driver\intc\intc.c: 1 warning, 0 errors
+compiling pwm.c...
+compiling timer.c...
+compiling wdt.c...
+compiling uart.c...
+compiling rf_xvr.c...
+compiling uart2.c...
+compiling prf.c...
+compiling prf_utils.c...
+compiling ffe0s.c...
+..\..\sdk\ble_stack\com\profiles\FFE0\src\ffe0s.c(267): warning:  #940-D: missing return statement at end of non-void function "ffe0s_get_att_idx"
+  }
+..\..\sdk\ble_stack\com\profiles\FFE0\src\ffe0s.c(32): warning:  #177-D: variable "llsync_service_uuid" was declared but never referenced
+  static uint8_t llsync_service_uuid[16] = {
+..\..\sdk\ble_stack\com\profiles\FFE0\src\ffe0s.c: 2 warnings, 0 errors
+compiling ffe0s_task.c...
+..\..\sdk\ble_stack\com\profiles\FFE0\src\ffe0s_task.c(141): warning:  #188-D: enumerated type mixed with another type
+                return 0;
+..\..\sdk\ble_stack\com\profiles\FFE0\src\ffe0s_task.c(147): warning:  #940-D: missing return statement at end of non-void function "ble_send_notify"
+  }
+..\..\sdk\ble_stack\com\profiles\FFE0\src\ffe0s_task.c: 2 warnings, 0 errors
+compiling attm_util128.c...
+compiling app.c...
+compiling app_task.c...
+app\app_task.c(53): warning:  #177-D: function "appm_get_handler" was declared but never referenced
+  static uint8_t appm_get_handler(const struct ke_state_handler *handler_list,
+app\app_task.c: 1 warning, 0 errors
+compiling ble_qiot_llsync_data.c...
+llsync\core\ble_qiot_llsync_data.c(93): warning:  #177-D: variable "inform_ret" was declared but never referenced
+      ble_qiot_ret_status_t inform_ret = BLE_QIOT_RS_OK;
+llsync\core\ble_qiot_llsync_data.c: 1 warning, 0 errors
+compiling ble_qiot_llsync_device.c...
+.\llsync\internal_inc\ble_qiot_llsync_device.h(34): warning:  #47-D: incompatible redefinition of macro "ATT_DEFAULT_MTU" (declared at line 250 of "..\..\sdk\ble_stack\com\rwble_hl\rwble_hl_config.h")
+  #define ATT_DEFAULT_MTU                 23  // default att mtu
+llsync\core\ble_qiot_llsync_device.c(142): warning:  #223-D: function "ble_get_device_info" declared implicitly
+        if (0 !=ble_get_device_info(&sg_device_info))
+llsync\core\ble_qiot_llsync_device.c: 2 warnings, 0 errors
+compiling ble_qiot_llsync_event.c...
+.\llsync\internal_inc\ble_qiot_llsync_device.h(34): warning:  #47-D: incompatible redefinition of macro "ATT_DEFAULT_MTU" (declared at line 250 of "..\..\sdk\ble_stack\com\rwble_hl\rwble_hl_config.h")
+  #define ATT_DEFAULT_MTU                 23  // default att mtu
+llsync\core\ble_qiot_llsync_event.c: 1 warning, 0 errors
+compiling ble_qiot_llsync_ota.c...
+llsync\core\ble_qiot_llsync_ota.c(239): warning:  #177-D: variable "size_align" was declared but never referenced
+      uint32_t size_align   = 0;
+llsync\core\ble_qiot_llsync_ota.c(240): warning:  #177-D: variable "file_percent" was declared but never referenced
+      uint8_t  file_percent = 0;
+llsync\core\ble_qiot_llsync_ota.c(241): warning:  #177-D: variable "temp_p" was declared but never referenced
+       uint8_t * temp_p;
+llsync\core\ble_qiot_llsync_ota.c(38): warning:  #177-D: variable "sg_ota_timer" was declared but never referenced
+  static ble_timer_t sg_ota_timer                           = NULL;
+llsync\core\ble_qiot_llsync_ota.c(54): warning:  #177-D: function "ble_qiot_ota_info_valid" was declared but never referenced
+  static inline bool ble_qiot_ota_info_valid(void)
+llsync\core\ble_qiot_llsync_ota.c: 5 warnings, 0 errors
+compiling ble_qiot_service.c...
+.\llsync\internal_inc\ble_qiot_llsync_device.h(34): warning:  #47-D: incompatible redefinition of macro "ATT_DEFAULT_MTU" (declared at line 250 of "..\..\sdk\ble_stack\com\rwble_hl\rwble_hl_config.h")
+  #define ATT_DEFAULT_MTU                 23  // default att mtu
+llsync\core\ble_qiot_service.c(189): warning:  #177-D: variable "service_info" was declared but never referenced
+      const qiot_service_init_s *service_info = NULL;
+llsync\core\ble_qiot_service.c: 2 warnings, 0 errors
+compiling ble_qiot_utils_base64.c...
+compiling ble_qiot_utils_crc.c...
+compiling ble_qiot_utils_hmac.c...
+compiling ble_qiot_utils_log.c...
+compiling ble_qiot_utils_md5.c...
+compiling ble_qiot_utils_sha1.c...
+compiling ble_qiot_template.c...
+llsync\date_template\ble_qiot_template.c(673): warning:  #61-D: integer operation result is out of range
+      uint32_t test_time  = HTONL(1613059200);
+llsync\date_template\ble_qiot_template.c(673): warning:  #68-D: integer conversion resulted in a change of sign
+      uint32_t test_time  = HTONL(1613059200);
+llsync\date_template\ble_qiot_template.c: 2 warnings, 0 errors
+compiling ble_qiot_ble_device.c...
+.\llsync\internal_inc\ble_qiot_llsync_device.h(34): warning:  #47-D: incompatible redefinition of macro "ATT_DEFAULT_MTU" (declared at line 250 of "..\..\sdk\ble_stack\com\rwble_hl\rwble_hl_config.h")
+  #define ATT_DEFAULT_MTU                 23  // default att mtu
+llsync\hal\ble_qiot_ble_device.c(173): warning:  #177-D: variable "ret" was declared but never referenced
+      int ret = 0;
+llsync\hal\ble_qiot_ble_device.c: 2 warnings, 0 errors
+compiling ble_qiot_ble_service.c...
+llsync\hal\ble_qiot_ble_service.c(198): warning:  #188-D: enumerated type mixed with another type
+      return 0;
+llsync\hal\ble_qiot_ble_service.c(84): warning:  #177-D: variable "adv_config_done" was declared but never referenced
+  static uint8_t adv_config_done = 0;
+llsync\hal\ble_qiot_ble_service.c(94): warning:  #177-D: variable "prepare_write_env" was declared but never referenced
+  static prepare_type_env_t prepare_write_env;
+llsync\hal\ble_qiot_ble_service.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=43154 RO-data=2582 RW-data=444 ZI-data=13340  
+After Build - User command #1: fromelf --bin --output .\output\app\bk3432_ble_app.bin .\obj\bk3432_ble_app.axf
+After Build - User command #2: .\output\encrypt_app.bat
+E:\work\BK3432\rw_ble\internal\bk3432_ble\SDK\projects\ble_app_LLSync>.\output\BinConvert_3432.exe  -oad .\output\bim\bk3432_ble_bim.bin  .\output\stack\bk3432_ble_stack.bin  .\output\app\bk3432_ble_app.bin -m 0x1020 -l 0x10420 -v 0x000C -rom_v 0x000A -e 00000000 00000000 00000000 00000000 
+cmd_bin_oad.stack_file_addr :0x1020
+binary version hex:0xc; dec:12
+Arm Image Binary will be converted to OAD format binary file.....
+cmd_bin_oad.stack_file_addr=1020
+boot_bin_len=fa0
+add stack bin start
+oad_stack_app_bin_len=1a900
+oad_app_bin_len=b500
+c9 db 90 03 0c 00 40 2d 42 42 42 42 ff ff 0a 00 /**< @CREATE_FILE_SUCCESS */
+/**< @Download flash file:.\output\app\bk3432_ble_app_merge.bin
+/**< @OAD file :.\output\app\bk3432_ble_app_stack.bin,CRC = 0xd3145bfd
+/**< @OAD file :.\output\app\bk3432_ble_app_app.bin,CRC = 0x0390dbc9
+/**< @author <gang.cheng@bekencorp.com> */
+/**< @version v0.3 */
+".\obj\bk3432_ble_app.axf" - 0 Error(s), 24 Warning(s).
+</pre>
+</body>
+</html>

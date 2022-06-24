@@ -1,0 +1,15 @@
+.\obj\ble_qiot_utils_log.o: llsync\utils\ble_qiot_utils_log.c
+.\obj\ble_qiot_utils_log.o: .\llsync\internal_inc\ble_qiot_log.h
+.\obj\ble_qiot_utils_log.o: .\llsync\hal\ble_qiot_config.h
+.\obj\ble_qiot_utils_log.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\ble_qiot_utils_log.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\obj\ble_qiot_utils_log.o: ..\..\sdk\plactform\driver\uart\uart.h
+.\obj\ble_qiot_utils_log.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\ble_qiot_utils_log.o: .\config\rwip_config.h
+.\obj\ble_qiot_utils_log.o: ..\..\sdk\ble_stack\com\rwble\rwble_config.h
+.\obj\ble_qiot_utils_log.o: .\config\rwip_config.h
+.\obj\ble_qiot_utils_log.o: ..\..\sdk\ble_stack\com\rwble_hl\rwble_hl_config.h
+.\obj\ble_qiot_utils_log.o: ..\..\sdk\ble_stack\com\rwble_hl\rwble_hl_error.h
+.\obj\ble_qiot_utils_log.o: .\config\rwprf_config.h
+.\obj\ble_qiot_utils_log.o: .\config\user_config.h
+.\obj\ble_qiot_utils_log.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
