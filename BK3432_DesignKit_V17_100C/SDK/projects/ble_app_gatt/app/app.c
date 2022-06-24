@@ -197,6 +197,7 @@ void appm_disconnect(void)
 
 void appm_start_advertising(void)
 {	
+		UART_PRINTF("%s,%d\r\n",__func__,__LINE__);
     // Check if the advertising procedure is already is progress
     if (ke_state_get(TASK_APP) == APPM_READY)
     {				
