@@ -308,7 +308,7 @@ void rw_main(void)
     user_timer_init();
 #endif
 	
-	UART_PRINTF("start \r\n");
+	UART_PRINTF("start !!!\r\n");
 
 	/*
 	 ***************************************************************************
