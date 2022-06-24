@@ -312,6 +312,7 @@ void appm_start_advertising(void)
         ke_msg_send(cmd);
 	 	UART_PRINTF("appm start advertising\r\n");
 
+				
 		wdt_enable(0x3fff);
 
         // Set the state of the task to APPM_ADVERTISING
